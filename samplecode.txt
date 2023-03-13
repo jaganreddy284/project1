@@ -1,0 +1,12 @@
+PS C:\> mkdir agent ; cd agent
+
+PS C:\agent> Add-Type -AssemblyName System.IO.Compression.FileSystem ; [System.IO.Compression.ZipFile]::ExtractToDirectory("$HOME\Downloads\vsts-agent-win-x64-2.217.2.zip", "$PWD")
+
+PS C:\agent> .\config.cmd
+
+
+PS C:\agent> .\run.cmd
+
+avfp6mud6skw66vsozxts6ek6uy7j2cz2ixv3gglp7na42a2gurq
+
+./config remove
